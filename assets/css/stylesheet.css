@@ -1,12 +1,16 @@
 /* css for header part  */
 
 .header{
+    background-color: #ffffff;
     width: 100%;
     height: max-content;
     position: fixed;
     padding-left: 5%;
     padding-right: 5%;
     box-shadow: 0px 11px 20px 6px #00000063;
+    z-index: 10;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 
@@ -92,13 +96,52 @@
 
 
 .hero{
-width: 100%;
-height: 100vh;
-background-image: url(asse);
+    width: 100%;
+    height: 100vh;
+}
+
+.hero video{
+    width: 100%;
+    /* height: 100vh; */
+    /* min-width: 100%; */
+    position: relative;
+}
+
+.hero_content{
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    padding-right: 30%;
+}
+
+.hero_content h1{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 300%;
+}
+.hero_content p{
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+.hero_actions button{
+    background-color: #00000000;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+    color: #fff;
 }
 
 
-
+.hero_actions a{
+    color: #fff;
+    margin-left: 20px;
+}
 
 
 
