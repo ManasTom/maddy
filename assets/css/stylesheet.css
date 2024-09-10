@@ -251,6 +251,7 @@
 }
 .home_portfolio_img img{
     width: 100%;
+    border-radius: 0.8rem;
 }
 
 .home_portfolio_txt{
