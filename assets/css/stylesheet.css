@@ -356,6 +356,7 @@
 }
 
 .review_box{
+    height: 100%;
     background-color: #000;
     padding: 2rem 2rem;
 }
@@ -396,6 +397,54 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home_booking{
+    width: 100%;
+    height: max-content;
+    background-color: #000;
+}
+.home_booking_head{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.home_booking_head h2{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+.home_booking_head p{
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    color: #fff;
+}
+
+.home_booking_head button{
+    background-color: #00000000;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+    color: #fff;
+}
 
 
 
