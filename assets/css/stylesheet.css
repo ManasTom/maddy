@@ -323,6 +323,95 @@
 
 
 
+
+
+
+
+
+
+
+
+
+.home_reviews_head{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.home_reviews_head h2{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.home_reviews{
+    width: 100%;
+    height: max-content;
+    padding: 2rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review_box{
+    background-color: #000;
+    padding: 2rem 2rem;
+}
+
+.review_box p{
+    color: #fff;
+    font-weight: 200;
+}
+
+.review_box h6{
+    color: #fff;
+    font-weight: 800;
+}
+
+
+@media (max-width: 1350px) {
+    .home_reviews{
+        padding: 2rem 10rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .home_reviews{
+        padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home_reviews{
+        padding: 0.8rem 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .home_reviews{
+        padding: 0.4rem 0.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     font-family: "Poppins", sans-serif;
 
