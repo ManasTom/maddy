@@ -461,6 +461,88 @@
 
 
 
+
+
+
+
+.home_about{
+    width: 100%;
+    height: max-content;
+    padding: 2rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_about_col img{
+    float: right;
+    width: 70%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.home_about_col h2{
+    width: 100%;
+    font-weight: 600;
+    color: #000000;
+}
+
+.home_about_col h6{
+    width: 100%;
+    font-weight: 600;
+    color: #000000;
+}
+
+.home_about_col p{
+    width: 100%;
+    font-weight: 300;
+    color: #000000;
+}
+
+@media (max-width: 1350px) {
+    .home_about{
+        padding: 2rem 10rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .home_about{
+        padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home_about{
+        padding: 0.8rem 2rem;
+    }
+    .home_about_col img{
+        float: none;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .home_reviews{
+        padding: 0.4rem 0.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     font-family: "Poppins", sans-serif;
 
