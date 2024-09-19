@@ -985,6 +985,70 @@ color: #000;
 
 
 
+
+
+
+
+
+
+
+
+
+/* CONTACT PAGE ********************************************** */
+
+
+.contact_hero{
+    width: 100%;
+    height: max-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 9rem 15rem;
+}
+
+.contact_hero h2{
+    font-weight: 700;
+    color: #000;
+}
+.contact_hero p{
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+
+@media (max-width: 1350px) {
+    .contact_hero{
+        padding: 4rem 10rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .contact_hero{
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_hero{
+        padding: 5rem 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     font-family: "Poppins", sans-serif;
 
