@@ -1,5 +1,13 @@
 .row{
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.divider{
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
 }
 
 /* css for header part  */
@@ -97,6 +105,150 @@
 
 
 
+
+
+.footer{
+    width: 100%;
+    height: max-content;
+    padding: 2rem 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.footer_logo_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo_container img{
+    width: 15%;
+}
+
+.footer_logo_taglines h5{
+    color: #fff;
+    font-weight: bold;
+}
+.footer_logo_taglines p{
+    color: #fff;
+} 
+
+.footer_social_icons{
+    margin-top: 1rem;
+}
+
+.footer_social_icons a{
+    color: #fff;
+    margin-left: 2rem;
+}
+
+.footer_col_2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer_connect{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+.footer_connect h6{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer_connect a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_inspire{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+.footer_inspire h6{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer_inspire input{
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.footer_inspire button{
+    width: 100%;
+    background-color: #00000000;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.footer_col_3 p{
+    color: #fff;
+    font-size: 50%;
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 1350px) {
+    .footer{
+        padding: 2rem 10rem;
+    }
+}
+
+@media (max-width: 1160px) {
+    .footer{
+        padding: 2rem 5rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .footer{
+        padding: 1rem 3rem;
+    }
+    .footer_logo_taglines p{
+        font-size: 70%;
+    } 
+}
+
+@media (max-width: 768px) {
+    .footer{
+        padding: 0.8rem 2rem;
+    }
+    .footer_col_2{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer{
+        padding: 0.4rem 0.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* HOME PAGE ***************************************************************************/
 
 
 .hero{
@@ -223,10 +375,6 @@
 
 
 
-
-
-
-
 .home_portfolio_head{
     width: 100%;
     height: max-content;
@@ -321,17 +469,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .home_reviews_head{
     width: 100%;
     height: max-content;
@@ -408,11 +545,6 @@
 
 
 
-
-
-
-
-
 .home_booking{
     width: 100%;
     height: max-content;
@@ -445,16 +577,6 @@
     padding: 1rem 4rem;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -546,133 +668,150 @@
 
 
 
-.footer{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT PAGE  *************************************************************************/
+.about_hero{
     width: 100%;
     height: max-content;
-    padding: 2rem 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
+    display: flex !important;
+    align-items: center !important;
+    padding: 7rem 15rem;
 }
 
-.footer_logo_container{
+.about_hero_col1{
     width: 100%;
     display: flex;
-    align-items: center;
-}
-
-.footer_logo_container img{
-    width: 15%;
-}
-
-.footer_logo_taglines h5{
-    color: #fff;
-    font-weight: bold;
-}
-.footer_logo_taglines p{
-    color: #fff;
-} 
-
-.footer_social_icons{
-    margin-top: 1rem;
-}
-
-.footer_social_icons a{
-    color: #fff;
-    margin-left: 2rem;
-}
-
-.footer_col_2{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.footer_connect{
-    display: flex;
     flex-direction: column;
-    padding: 1rem 1rem;
+    align-items: start;
+    justify-content: space-around;
 }
 
-.footer_connect h6{
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.about_hero_col1 h2{
+    font-weight: 700;
 }
 
-.footer_connect a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer_inspire{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem;
-}
-
-.footer_inspire h6{
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.footer_inspire input{
-    outline: none;
-    border: none;
-    width: 100%;
-    border-radius: 0.5rem;
-    padding: 1rem 2rem;
-}
-
-.footer_inspire button{
-    width: 100%;
+.about_hero_col1 button{
+    width: 50%;
     background-color: #00000000;
-    border: 1px solid #fff;
+    border: 1px solid #000000;
     border-radius: 2rem;
-    padding: 1rem 4rem;
+    padding: 1rem 0rem;
     margin-top: 1rem;
-    color: #fff;
+    color: #000000;
+    text-align: center;
+}
+
+.about_hero_col2{
+    width: 100%;
+}
+
+.about_hero_col2 img{
+    width: 100%;
+    padding: 2rem;
+    border-radius: 70px;
 }
 
 
 @media (max-width: 1350px) {
-    .footer{
-        padding: 2rem 10rem;
+    .about_hero{
+        padding: 4rem 10rem;
     }
 }
 
-@media (max-width: 1160px) {
-    .footer{
-        padding: 2rem 5rem;
-    }
-}
-
-@media (max-width: 980px) {
-    .footer{
-        padding: 1rem 3rem;
-    }
-    .footer_logo_taglines p{
-        font-size: 70%;
-    } 
-}
-
-@media (max-width: 768px) {
-    .footer{
-        padding: 0.8rem 2rem;
-    }
-    .footer_col_2{
-        display: block;
+@media (max-width: 950px) {
+    .about_hero{
+        padding: 3rem 5rem;
     }
 }
 
 @media (max-width: 768px) {
-    .footer{
-        padding: 0.4rem 0.2rem;
+    .about_hero{
+        padding: 5rem 1rem;
+    }
+    .about_hero_col2 img{
+        padding: 2rem 0.5rem;
     }
 }
+
+
+
+
+
+
+
+.about_services{
+    width: 100%;
+    height: max-content;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 2rem 15rem;
+}
+
+.about_services h2{
+    font-weight: 500;
+}
+.about_services p{
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.about_services_col{
+}
+
+.about_services_col img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.about_services_col h5{
+margin-top: 10px;
+}
+.about_services_col p{
+    font-size: 80%;
+    color: #efefef;
+}
+
+@media (max-width: 1350px) {
+    .about_services{
+        padding: 4rem 10rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .about_services{
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_services{
+        padding: 5rem 1rem;
+    }
+}
+
 
 
 
