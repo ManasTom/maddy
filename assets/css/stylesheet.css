@@ -185,7 +185,7 @@
     border: none;
     width: 100%;
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 6%;
 }
 
 .footer_inspire button{
@@ -193,7 +193,7 @@
     background-color: #00000000;
     border: 1px solid #fff;
     border-radius: 2rem;
-    padding: 1rem 4rem;
+    padding: 0.3rem 0rem;
     margin-top: 1rem;
     color: #fff;
 }
@@ -556,6 +556,8 @@
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
 }
 .home_booking_head h2{
     width: 100%;
@@ -1055,16 +1057,20 @@ color: #000;
 }
 
 .contact_form_container input{
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
-    padding: 2%;
-    border-radius: 0.8rem;
+    padding: 4%;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
 }
 .contact_form_container textarea{
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
-    padding: 2%;
-    border-radius: 0.8rem;
+    padding: 4%;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
 }
 
 .contact_form_container button{
@@ -1075,7 +1081,6 @@ color: #000;
     padding: 1rem 0rem;
     color: #ffffff;
     text-align: center;
-
 }
 
 .contact_hero_form img{
@@ -1095,6 +1100,129 @@ color: #000;
     }
 }
 
+@media (max-width: 317px){
+
+    .contact_form_container button{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+.contact_location{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 15rem;
+}
+
+.contact_location_col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_location_col1 h2{
+    font-weight: 700;
+}
+
+@media (max-width: 1350px) {
+    .contact_location{
+        padding: 4rem 10rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .contact_location{
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_location{
+        padding: 5rem 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.booking_hero{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    padding: 9rem 15rem 1rem 15rem;
+}
+
+.booking_hero h2{
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+}
+.booking_hero p{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+@media (max-width: 1350px) {
+    .booking_hero{
+        padding: 4rem 10rem 0.5rem 10rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .booking_hero{
+        padding: 3rem 5rem 0.2rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking_hero{
+        padding: 5rem 1rem 0.1rem 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.booking_form{
+
+}
+
+
+
+
+
+
 
 
 
@@ -1103,5 +1231,5 @@ color: #000;
 *{
     font-family: "Poppins", sans-serif;
 
-    border: 0.5px solid red;
+    /* border: 0.5px solid red; */
 }
