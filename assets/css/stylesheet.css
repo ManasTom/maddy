@@ -1078,6 +1078,22 @@ color: #000;
 
 }
 
+.contact_hero_form img{
+    width: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .contact_hero_form img{
+        width: 80%;
+    }
+    .contact_form_container{
+    width: 100%;
+    }
+    .contact_hero_form{
+        flex-direction: column;
+    }
+}
 
 
 
