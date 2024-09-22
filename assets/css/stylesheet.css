@@ -1215,9 +1215,30 @@ color: #000;
 
 
 .booking_form{
-
+    width: 100%;
+    height: max-content;
+    background-color: #000;
+    padding: 2rem 15rem;
 }
 
+
+@media (max-width: 1350px) {
+    .booking_form{
+        padding: 4rem 10rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .booking_form{
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking_form{
+        padding: 5rem 1rem;
+    }
+}
 
 
 
