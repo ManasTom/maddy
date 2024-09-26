@@ -2,11 +2,11 @@
 
 <?php
     // Email configuration
-    $to = " plyofitacademy@gmail.com";
+    $to = "mohanmadhu853@gmail.com";
     $subject = "New review submission ";
     $message = "You have a new review submission \n";
     $message .= "Click the link below to access dashboard \n";
-    $message .= "https://demo.illforddigital.com/plyofit/admin.html";
+    $message .= "https://yourdomain.com/admin.html";
 
     // Additional headers for the main email
     $headers = "From: Admin\r\n";

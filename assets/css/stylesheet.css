@@ -1501,7 +1501,25 @@
     /* Approved button inactive by default */
 }
 
+.admin_head{
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
 
+.admin_username{
+    color: #000;
+    float: left;
+}
+
+.admin_head button{
+    color: #ffffff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 0.2rem;
+    float: right;
+}
 
 
 

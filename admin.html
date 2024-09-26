@@ -52,6 +52,10 @@
     </header>
 
     <section class="contact_hero">
+        <div class="admin_head">
+            <h6 class="admin_username" id="displayUserName">User</h6>
+            <button>Logout</button>
+        </div>
         <div class="reviewToggler">
             <button class="reviewTogglerPending" onclick="showPendingReviews()">
                 Pending
@@ -121,7 +125,7 @@
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
                 // User is signed in, display the user name
-                document.getElementById('displayUserName').textContent = user.email;
+                document.getElementById('displayUserName').textContent = "User: " + user.email;
             } else {
                 // No user is signed in, redirect to login page
                 window.location.href = 'login.html';
