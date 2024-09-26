@@ -108,7 +108,7 @@
     </section>
     <section class="home_reviews">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
                 <div class="review_box">
                     <p>
                         The portraits Maddy created for our anniversary were stunning; he captured our essence
@@ -119,7 +119,7 @@
                     <p>New York</p>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
                 <div class="review_box">
                     <p>
                         Maddy's performance at our wedding was mesmerizing; he truly captivated everyone present.
@@ -128,7 +128,47 @@
                     <p>Los Angeles</p>
                 </div>
             </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        The portraits Maddy created for our anniversary were stunning; he captured our essence
+                        beautifully.
+                        Highly recommend his talent for any special occasion!
+                    </p>
+                    <h6>Michael Smith</h6>
+                    <p>New York</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        Maddy's performance at our wedding was mesmerizing; he truly captivated everyone present.
+                    </p>
+                    <h6>Sarah Johnson</h6>
+                    <p>Los Angeles</p>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 review_col">
+                <button onclick="DisplayReviewPopup()">
+                    Write a Review.. <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <div class="review_form_container">
+                    <div class="Review_popup_closer">
+                        <a onclick="CloseReviewPopup()"><i class="fa-solid fa-x"></i></a><br><br>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Full Name" id="fullName" name="fullName"><br>
+                        <input type="email" placeholder="Email ID" id="email" name="email"><br>
+                        <textarea placeholder="Your Review" id="message" name="message" rows="5"
+                            maxlength="500"></textarea><br>
+                        <button id="submitReview">Send &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+
+                    </form>
+                </div>
+            </div>
         </div>
+        <div class="row">
+
         </div>
     </section>
 
@@ -198,6 +238,15 @@
 
 
     <script src="assets/js/hambugerToggle.js"></script>
+    <!-- Import the Firebase core (always required) -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <!-- Import only the Firebase database module -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="assets/js/fireconfig.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="reviewSubmit.js"></script>
 </body>
 
 </html>
