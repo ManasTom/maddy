@@ -10,6 +10,51 @@
     background-color: #fff;
 }
 
+
+
+
+
+
+
+
+
+/* animations */
+.animate {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.fadeLeft.animate {
+    transform: translateX(-60px);
+}
+
+.fadeRight.animate {
+    transform: translateX(60px);
+}
+
+.fadeInUp.animate {
+    transform: translateY(60px);
+}
+
+.fadeInDown.animate {
+    transform: translateY(-60px);
+}
+
+.animate.fade-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* animations */
+
+
+
+
+
+
+
+
+
 /* css for header part  */
 
 .header {
@@ -1390,7 +1435,7 @@
 
 
 
-
+/* ADMIN  */
 
 .reviews_table_wrapper {
     width: 100%;
