@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var thead = document.createElement("thead");
         var headerRow = document.createElement("tr");
-        headerRow.innerHTML = "<th>Name</th><th>Email</th><th>Message</th><th>Action</th>";
+        headerRow.innerHTML = "<th>Name</th><th>Place</th><th>Message</th><th>Action</th>";
         thead.appendChild(headerRow);
         table.appendChild(thead);
 
@@ -139,7 +139,7 @@ function createApprovedReviewsTable(snapshot) {
 
     var thead = document.createElement("thead");
     var headerRow = document.createElement("tr");
-    headerRow.innerHTML = "<th>Name</th><th>Email</th><th>Message</th><th>Action</th>";
+    headerRow.innerHTML = "<th>Name</th><th>PLace</th><th>Message</th><th>Action</th>";
     thead.appendChild(headerRow);
     table.appendChild(thead);
 

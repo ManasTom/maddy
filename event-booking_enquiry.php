@@ -13,18 +13,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if required fields are filled
     if (empty($yourname) || empty($yourmailid) || empty($contactnumber) || empty($message)) {
-        echo "Please fill in all required fields.";
+        echo "<script type='text/javascript'>alert('Please fill in all required fields.');</script>";
         exit;
     }
 
     // Validate email
     if (!filter_var($yourmailid, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format";
+        echo "<script type='text/javascript'>alert('Invalid email format');</script>";
         exit;
     }
 
     // Set email details
-    $to = "owner@example.com";  // Replace with the recipient email address (website owner's email)
+    $to = "manastom670@gmail.com";  // Replace with the recipient email address (website owner's email)
     $subject = "New Event Booking Inquiry";
 
     // Create HTML message for the website owner
@@ -110,9 +110,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         mail($yourmailid, $subject_reply, $reply_content, $headers_reply);
 
         // Success message
-        echo "Your inquiry has been sent successfully.";
+        echo "<script type='text/javascript'>alert('Your inquiry has been sent successfully.');</script>";
     } else {
-        echo "There was an error sending your message.";
+        echo "<script type='text/javascript'>alert('There was an error sending your message.');</script>";
     }
 }
 ?>

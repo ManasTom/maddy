@@ -2,7 +2,7 @@
 
 <?php
     // Email configuration
-    $to = "mohanmadhu853@gmail.com";
+    $to = "manastom670@gmail.com";
     $subject = "New review submission ";
     $message = "You have a new review submission \n";
     $message .= "Click the link below to access dashboard \n";
