@@ -55,6 +55,35 @@
 
 
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    padding: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 /* css for header part  */
 
 .header {
@@ -1536,6 +1565,7 @@
     color: #000000;
     font-weight: bold;
 }
+
 .reviewTogglerPending {
     background-color: #00000000;
     /* Pending button active by default */
@@ -1546,19 +1576,19 @@
     /* Approved button inactive by default */
 }
 
-.admin_head{
+.admin_head {
     width: 100%;
     height: max-content;
     border-bottom: 1px solid #000;
     margin-bottom: 20px;
 }
 
-.admin_username{
+.admin_username {
     color: #000;
     float: left;
 }
 
-.admin_head button{
+.admin_head button {
     color: #ffffff;
     background-color: #ff0000;
     border: none;
