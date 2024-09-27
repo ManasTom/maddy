@@ -9,6 +9,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 
+    
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -108,7 +109,7 @@
     </section>
     <section class="home_reviews">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
                 <div class="review_box">
                     <p>
                         The portraits Maddy created for our anniversary were stunning; he captured our essence
@@ -119,7 +120,7 @@
                     <p>New York</p>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
                 <div class="review_box">
                     <p>
                         Maddy's performance at our wedding was mesmerizing; he truly captivated everyone present.
@@ -128,7 +129,47 @@
                     <p>Los Angeles</p>
                 </div>
             </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        The portraits Maddy created for our anniversary were stunning; he captured our essence
+                        beautifully.
+                        Highly recommend his talent for any special occasion!
+                    </p>
+                    <h6>Michael Smith</h6>
+                    <p>New York</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        Maddy's performance at our wedding was mesmerizing; he truly captivated everyone present.
+                    </p>
+                    <h6>Sarah Johnson</h6>
+                    <p>Los Angeles</p>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 review_col">
+                <button onclick="DisplayReviewPopup()">
+                    Write a Review.. <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <div class="review_form_container">
+                    <div class="Review_popup_closer">
+                        <a onclick="CloseReviewPopup()"><i class="fa-solid fa-x"></i></a><br><br>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Full Name" id="fullName" name="fullName"><br>
+                        <input type="email" placeholder="Email ID" id="email" name="email"><br>
+                        <textarea placeholder="Your Review" id="message" name="message" rows="5"
+                            maxlength="500"></textarea><br>
+                        <button id="submitReview">Send &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+
+                    </form>
+                </div>
+            </div>
         </div>
+        <div class="row">
+
         </div>
     </section>
 
@@ -198,6 +239,47 @@
 
 
     <script src="assets/js/hambugerToggle.js"></script>
+    <!-- Import the Firebase core (always required) -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <!-- Import only the Firebase database module -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="assets/js/fireconfig.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="reviewSubmit.js"></script>
+    <script>
+        const reviewContainer = document.querySelector('.review_section'); // Assuming you have a container for the reviews
+
+        function fetchLatestReviews() {
+            const reviewsRef = db.ref('approvedReviews');
+
+            reviewsRef.limitToLast(4).once('value', (snapshot) => {
+                const reviews = snapshot.val();
+                const reviewKeys = Object.keys(reviews).reverse(); // Get the latest reviews
+
+                reviewContainer.innerHTML = ''; // Clear existing reviews
+
+                reviewKeys.forEach((key) => {
+                    const review = reviews[key];
+                    const reviewHTML = `
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                    <div class="review_box">
+                        <p>${review.message}</p>
+                        <h6>${review.name}</h6>
+                        <p>${review.email}</p>
+                    </div>
+                </div>
+            `;
+                    reviewContainer.innerHTML += reviewHTML;
+                });
+            });
+        }
+
+        // Call the function to fetch and display reviews
+        fetchLatestReviews();
+
+    </script>
 </body>
 
 </html>
