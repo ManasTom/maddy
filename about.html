@@ -52,7 +52,7 @@
     </header>
 
     <section class="about_hero">
-        <div style="margin: 0; width: 100%; padding: 0;" class="row">
+        <div style="margin: 0; width: 100%; padding: 0;" class="row animate fadeInUp">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 about_hero_col1">
                 <h2>
                     About The Maddy
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section class="about_services">
+    <section class="about_services animate fadeInUp">
         <h2>Artistic Performance Services</h2>
         <p>
             Offering captivating dance performances and stunning portrait drawings
@@ -112,6 +112,75 @@
                 <p>
                     Special Event Packages
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="home_reviews_head animate fadeInUp">
+        <h2>Customer Reviews</h2>
+        <p>Hear what our clients say about Maddy's incredible performances and artistry.</p>
+    </section>
+    <section class="home_reviews">
+        <div class="row home_reviews_row animate fadeInUp">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        The portraits Maddy created for our anniversary were stunning; he captured our essence
+                        beautifully.
+                        Highly recommend his talent for any special occasion!
+                    </p>
+                    <h6>Michael Smith</h6>
+                    <p>New York</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        Maddy's performance at our wedding was mesmerizing; he truly captivated everyone present.
+                    </p>
+                    <h6>Sarah Johnson</h6>
+                    <p>Los Angeles</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        The portraits Maddy created for our anniversary were stunning; he captured our essence
+                        beautifully.
+                        Highly recommend his talent for any special occasion!
+                    </p>
+                    <h6>Michael Smith</h6>
+                    <p>New York</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_col">
+                <div class="review_box">
+                    <p>
+                        Maddy's performance at our wedding was mesmerizing; he truly captivated everyone present.
+                    </p>
+                    <h6>Sarah Johnson</h6>
+                    <p>Los Angeles</p>
+                </div>
+            </div>
+        </div>
+        <div class="row animate fadeInUp">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 review_col">
+                <button onclick="DisplayReviewPopup()">
+                    Write a Review.. <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <div class="review_form_container">
+                    <div class="Review_popup_closer">
+                        <a onclick="CloseReviewPopup()"><i class="fa-solid fa-x"></i></a><br><br>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Full Name" id="fullName" name="fullName"><br>
+                        <input type="text" placeholder="Country/Place/Region" id="email" name="email"><br>
+                        <textarea placeholder="Your Review" id="message" name="message" rows="5"
+                            maxlength="500"></textarea><br>
+                        <button id="submitReview">Send &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -154,7 +223,18 @@
     </footer>
 
 
+    <script src="assets/js/animate.js"></script>
     <script src="assets/js/hambugerToggle.js"></script>
+    <!-- Import the Firebase core (always required) -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <!-- Import only the Firebase database module -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="assets/js/fireconfig.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="reviewSubmit.js"></script>
+    <script src="assets/js/displayReviews.js"></script>
 </body>
 
 </html>
