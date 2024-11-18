@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDHWat27MvP7Oml5TSRVvejGXPFzT35S1I",
-  authDomain: "uploadcheck-d6971.firebaseapp.com",
-  databaseURL: "https://uploadcheck-d6971-default-rtdb.firebaseio.com",
-  projectId: "uploadcheck-d6971",
-  storageBucket: "uploadcheck-d6971.appspot.com",
-  messagingSenderId: "515282333943",
-  appId: "1:515282333943:web:b086b7d0e73fdb9e0c63f2"
+  apiKey: "AIzaSyA3jdQrrMfETpynml4EVO00vgIYEGEi0jY",
+  authDomain: "the-maddy.firebaseapp.com",
+  databaseURL: "https://the-maddy-default-rtdb.firebaseio.com/",
+  projectId: "the-maddy",
+  storageBucket: "the-maddy.firebasestorage.app",
+  messagingSenderId: "314970432448",
+  appId: "1:314970432448:web:50ab70f77b403260211e25"
 };
 
 // Initialize Firebase
