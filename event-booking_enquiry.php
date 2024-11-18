@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <body>
         <div class='container'>
             <div class='header'>
-                <img src='https://yourdomain.com/logo.png' alt='Your Logo'>
+                <img src='https://demo.illforddigital.com/adder/assets/img/maddy_logo_1.png' alt='Your Logo'>
             </div>
             <div class='details'>
                 <h3>New Event Booking Inquiry</h3>
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <body>
             <div class='container'>
                 <div class='header'>
-                    <img src='https://yourdomain.com/logo.png' alt='Your Logo'>
+                    <img src='https://demo.illforddigital.com/adder/assets/img/maddy_logo_1.png' alt='Your Logo'>
                 </div>
                 <div class='message'>
                     <p>Dear $yourname,</p>

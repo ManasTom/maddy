@@ -6,7 +6,7 @@
     $subject = "New review submission ";
     $message = "You have a new review submission \n";
     $message .= "Click the link below to access dashboard \n";
-    $message .= "https://yourdomain.com/admin.html";
+    $message .= "https://demo.illforddigital.com/adder/admin.html";
 
     // Additional headers for the main email
     $headers = "From: Admin\r\n";
